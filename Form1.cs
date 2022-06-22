@@ -141,5 +141,14 @@ namespace EntityNotOtomasyon
             dataGridView1.DataSource = db.tblOgrenci.Where(
                     x => x.OgrenciAd.StartsWith(textBoxOgrAd.Text)).ToList();
         }
+
+        private void buttonLinq_Click(object sender, EventArgs e)
+        {
+            if(radioButton1.Checked == true)
+            {
+                List<tblOgrenci> list1 = db.tblOgrenci.OrderBy(p=>p.OgrenciAd).ToList();
+                dataGridView1.DataSource = list1;
+            }
+        }
     }
 }
