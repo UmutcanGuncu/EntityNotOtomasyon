@@ -129,5 +129,17 @@ namespace EntityNotOtomasyon
         {
             dataGridView1.DataSource = db.NotListesi();
         }
+
+        private void buttonBul_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.tblOgrenci.Where(x => x.OgrenciAd == textBoxOgrAd.Text | x.OgrenciSoyad==textBoxOgrSoyad.Text)
+                .ToList();
+        }
+
+        private void textBoxOgrAd_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.tblOgrenci.Where(
+                    x => x.OgrenciAd.StartsWith(textBoxOgrAd.Text)).ToList();
+        }
     }
 }

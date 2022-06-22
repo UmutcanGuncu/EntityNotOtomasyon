@@ -133,6 +133,7 @@
             this.buttonBul.TabIndex = 5;
             this.buttonBul.Text = "Bul";
             this.buttonBul.UseVisualStyleBackColor = true;
+            this.buttonBul.Click += new System.EventHandler(this.buttonBul_Click);
             // 
             // buttonDersListele
             // 
@@ -227,6 +228,7 @@
             this.textBoxOgrAd.Name = "textBoxOgrAd";
             this.textBoxOgrAd.Size = new System.Drawing.Size(197, 36);
             this.textBoxOgrAd.TabIndex = 9;
+            this.textBoxOgrAd.TextChanged += new System.EventHandler(this.textBoxOgrAd_TextChanged);
             // 
             // textBoxOgrId
             // 
