@@ -67,6 +67,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.buttonLinq = new System.Windows.Forms.Button();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -437,7 +439,7 @@
             // 
             // buttonLinq
             // 
-            this.buttonLinq.Location = new System.Drawing.Point(1031, 94);
+            this.buttonLinq.Location = new System.Drawing.Point(1031, 150);
             this.buttonLinq.Name = "buttonLinq";
             this.buttonLinq.Size = new System.Drawing.Size(139, 39);
             this.buttonLinq.TabIndex = 10;
@@ -445,11 +447,34 @@
             this.buttonLinq.UseVisualStyleBackColor = true;
             this.buttonLinq.Click += new System.EventHandler(this.buttonLinq_Click);
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(1031, 74);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(225, 32);
+            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Ada Göre Sırala Desc";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(1031, 112);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(128, 32);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "İlk 3 Kayıt ";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 731);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.buttonLinq);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
@@ -522,6 +547,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button buttonLinq;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

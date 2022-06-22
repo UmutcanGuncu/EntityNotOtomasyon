@@ -146,9 +146,31 @@ namespace EntityNotOtomasyon
         {
             if(radioButton1.Checked == true)
             {
-                List<tblOgrenci> list1 = db.tblOgrenci.OrderBy(p=>p.OgrenciAd).ToList();
-                dataGridView1.DataSource = list1;
+                if(checkBox1.Checked == true)
+                {
+                    List<tblOgrenci> list2 = db.tblOgrenci.OrderBy(y => y.OgrenciAd).Take(3).ToList();
+                    dataGridView1.DataSource = list2;
+                }
+                else
+                {
+                    List<tblOgrenci> list1 = db.tblOgrenci.OrderBy(p => p.OgrenciAd).ToList();
+                    dataGridView1.DataSource = list1;
+                }
             }
+            else if(radioButton2.Checked == true)
+            {
+                if(checkBox1.Checked == true)
+                {
+                    List<tblOgrenci> list2 = db.tblOgrenci.OrderByDescending(x => x.OgrenciAd).Take(3).ToList();
+                    dataGridView1.DataSource = list2;
+                }
+                else
+                {
+                    List<tblOgrenci> list2 = db.tblOgrenci.OrderByDescending(x => x.OgrenciAd).ToList();
+                    dataGridView1.DataSource = list2;
+                }
+            }
+            
         }
     }
 }
