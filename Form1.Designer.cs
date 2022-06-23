@@ -52,23 +52,26 @@
             this.textBoxDersAd = new System.Windows.Forms.TextBox();
             this.textBoxDersId = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxOrtalama = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxDurum = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSinav3 = new System.Windows.Forms.TextBox();
             this.textBoxSinav1 = new System.Windows.Forms.TextBox();
             this.textBoxSinav2 = new System.Windows.Forms.TextBox();
-            this.buttonNotGuncelle = new System.Windows.Forms.Button();
-            this.buttonHesapla = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.buttonLinq = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.buttonSınavNotuEkle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -299,18 +302,13 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.textBoxOrtalama);
+            this.groupBox3.Controls.Add(this.buttonSınavNotuEkle);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBoxDurum);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.textBoxSinav3);
             this.groupBox3.Controls.Add(this.textBoxSinav1);
             this.groupBox3.Controls.Add(this.textBoxSinav2);
-            this.groupBox3.Controls.Add(this.buttonNotGuncelle);
-            this.groupBox3.Controls.Add(this.buttonHesapla);
             this.groupBox3.Location = new System.Drawing.Point(629, 265);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(355, 371);
@@ -318,35 +316,10 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Notlar";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(55, 199);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 28);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Durum:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(32, 157);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 28);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Ortalama:";
-            // 
-            // textBoxOrtalama
-            // 
-            this.textBoxOrtalama.Location = new System.Drawing.Point(152, 149);
-            this.textBoxOrtalama.Name = "textBoxOrtalama";
-            this.textBoxOrtalama.Size = new System.Drawing.Size(197, 36);
-            this.textBoxOrtalama.TabIndex = 17;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(53, 118);
+            this.label7.Location = new System.Drawing.Point(43, 186);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 28);
             this.label7.TabIndex = 1;
@@ -355,23 +328,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 73);
+            this.label6.Location = new System.Drawing.Point(43, 141);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 28);
             this.label6.TabIndex = 1;
             this.label6.Text = "Sınav 2:";
             // 
-            // textBoxDurum
-            // 
-            this.textBoxDurum.Location = new System.Drawing.Point(152, 191);
-            this.textBoxDurum.Name = "textBoxDurum";
-            this.textBoxDurum.Size = new System.Drawing.Size(197, 36);
-            this.textBoxDurum.TabIndex = 18;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(53, 31);
+            this.label5.Location = new System.Drawing.Point(43, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 28);
             this.label5.TabIndex = 1;
@@ -379,42 +345,24 @@
             // 
             // textBoxSinav3
             // 
-            this.textBoxSinav3.Location = new System.Drawing.Point(152, 107);
+            this.textBoxSinav3.Location = new System.Drawing.Point(142, 175);
             this.textBoxSinav3.Name = "textBoxSinav3";
             this.textBoxSinav3.Size = new System.Drawing.Size(197, 36);
             this.textBoxSinav3.TabIndex = 16;
             // 
             // textBoxSinav1
             // 
-            this.textBoxSinav1.Location = new System.Drawing.Point(152, 23);
+            this.textBoxSinav1.Location = new System.Drawing.Point(142, 91);
             this.textBoxSinav1.Name = "textBoxSinav1";
             this.textBoxSinav1.Size = new System.Drawing.Size(197, 36);
             this.textBoxSinav1.TabIndex = 14;
             // 
             // textBoxSinav2
             // 
-            this.textBoxSinav2.Location = new System.Drawing.Point(152, 65);
+            this.textBoxSinav2.Location = new System.Drawing.Point(142, 133);
             this.textBoxSinav2.Name = "textBoxSinav2";
             this.textBoxSinav2.Size = new System.Drawing.Size(197, 36);
             this.textBoxSinav2.TabIndex = 15;
-            // 
-            // buttonNotGuncelle
-            // 
-            this.buttonNotGuncelle.Location = new System.Drawing.Point(75, 312);
-            this.buttonNotGuncelle.Name = "buttonNotGuncelle";
-            this.buttonNotGuncelle.Size = new System.Drawing.Size(274, 52);
-            this.buttonNotGuncelle.TabIndex = 20;
-            this.buttonNotGuncelle.Text = "Sınav Notu Güncelle";
-            this.buttonNotGuncelle.UseVisualStyleBackColor = true;
-            // 
-            // buttonHesapla
-            // 
-            this.buttonHesapla.Location = new System.Drawing.Point(75, 254);
-            this.buttonHesapla.Name = "buttonHesapla";
-            this.buttonHesapla.Size = new System.Drawing.Size(274, 52);
-            this.buttonHesapla.TabIndex = 19;
-            this.buttonHesapla.Text = "Hesapla";
-            this.buttonHesapla.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -439,9 +387,9 @@
             // 
             // buttonLinq
             // 
-            this.buttonLinq.Location = new System.Drawing.Point(1031, 150);
+            this.buttonLinq.Location = new System.Drawing.Point(999, 575);
             this.buttonLinq.Name = "buttonLinq";
-            this.buttonLinq.Size = new System.Drawing.Size(139, 39);
+            this.buttonLinq.Size = new System.Drawing.Size(274, 56);
             this.buttonLinq.TabIndex = 10;
             this.buttonLinq.Text = "Linq Entitty";
             this.buttonLinq.UseVisualStyleBackColor = true;
@@ -468,11 +416,117 @@
             this.checkBox1.Text = "İlk 3 Kayıt ";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(1031, 150);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(184, 32);
+            this.radioButton3.TabIndex = 12;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Id\'ye Göre Sırala";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(1031, 188);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(219, 32);
+            this.radioButton4.TabIndex = 12;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Adı A İle Başlayanlar";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(1031, 226);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(303, 32);
+            this.radioButton5.TabIndex = 12;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Adının Sonunda A Bulunanlar";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(1031, 263);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(233, 32);
+            this.radioButton6.TabIndex = 13;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Toplam Ogrenci Sayisi";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(1031, 301);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(322, 32);
+            this.radioButton7.TabIndex = 13;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "1.Sınavdan Alınan Toplam Puan";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(1031, 339);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(206, 32);
+            this.radioButton8.TabIndex = 13;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "2.Sınav Ortalaması";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(1031, 378);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(275, 32);
+            this.radioButton9.TabIndex = 13;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "1.Sınavı Ortalamanın Üstü";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(1031, 414);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(195, 32);
+            this.radioButton10.TabIndex = 13;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "En Düşük Alan Kiş";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // buttonSınavNotuEkle
+            // 
+            this.buttonSınavNotuEkle.Location = new System.Drawing.Point(48, 252);
+            this.buttonSınavNotuEkle.Name = "buttonSınavNotuEkle";
+            this.buttonSınavNotuEkle.Size = new System.Drawing.Size(274, 52);
+            this.buttonSınavNotuEkle.TabIndex = 20;
+            this.buttonSınavNotuEkle.Text = "Sınav Notu Ekle";
+            this.buttonSınavNotuEkle.UseVisualStyleBackColor = true;
+            this.buttonSınavNotuEkle.Click += new System.EventHandler(this.buttonSınavNotuEkle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 731);
+            this.ClientSize = new System.Drawing.Size(1381, 731);
+            this.Controls.Add(this.radioButton8);
+            this.Controls.Add(this.radioButton10);
+            this.Controls.Add(this.radioButton9);
+            this.Controls.Add(this.radioButton7);
+            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.buttonLinq);
@@ -525,21 +579,15 @@
         private System.Windows.Forms.TextBox textBoxDersAd;
         private System.Windows.Forms.TextBox textBoxDersId;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBoxDurum;
         private System.Windows.Forms.TextBox textBoxSinav3;
         private System.Windows.Forms.TextBox textBoxSinav1;
         private System.Windows.Forms.TextBox textBoxSinav2;
-        private System.Windows.Forms.Button buttonNotGuncelle;
-        private System.Windows.Forms.Button buttonHesapla;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxOrtalama;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -549,6 +597,15 @@
         private System.Windows.Forms.Button buttonLinq;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.Button buttonSınavNotuEkle;
     }
 }
 
